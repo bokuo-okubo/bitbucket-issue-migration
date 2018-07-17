@@ -246,7 +246,7 @@ def main(options):
             if resp:
                 gh_issue_url = resp.json()['issue_url']
                 gh_issue_id = int(gh_issue_url.split('/')[-1])
-                assert gh_issue_id == issue['local_id']
+                # assert gh_issue_id == issue['local_id']
         print("Completed {} of {} issues".format(index + 1, len(issues)))
 
 
